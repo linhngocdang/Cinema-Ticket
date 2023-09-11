@@ -1,0 +1,40 @@
+.global.skeleton{
+    box-shadow: 0 0 5px 2px rgb(200, 194, 194);
+    position: absolute;
+    top:0;
+    right:0;
+    bottom:0;
+    left:0;
+    &::before{
+        content: "";
+        background: #f6f0f0;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        
+        
+    }
+    &::after{
+        content: "";
+        opacity: 0.5;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background: linear-gradient( to right, #e5e5e5, white 50% , #e5e5e5);
+        animation: skeleton73 2s ease-in-out infinite alternate;
+    }
+
+    @keyframes skeleton73 {
+        from{
+            left: 0%
+        }
+        to{
+            left: 100%;
+        }
+        
+    }
+}

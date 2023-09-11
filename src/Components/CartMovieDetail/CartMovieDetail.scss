@@ -1,0 +1,40 @@
+.cart-movie-detail {
+    position: relative;
+    // z-index: 2;
+    background-color: rgba(0, 0, 0, 0.6);
+
+    &::before {
+        z-index: -1;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        display: block;
+        content: "";
+        position: absolute;
+        opacity: 0.3;
+        background-image: var(--urlBackground);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .image-portrait {
+        position: relative;
+
+        .play-btn {
+            position: absolute;
+            top: calc(50% - 50px);
+            left: calc(50% - 50px);
+          
+            .icon-play {
+                width: 100px;
+                height: 100px;
+                color: rgba(0, 0, 0, 0.8);
+            }
+
+            .icon-play:hover {
+                color: rgba(0, 0, 0, 0.3);
+            }
+        }
+    }
+}

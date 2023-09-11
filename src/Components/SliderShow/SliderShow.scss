@@ -1,0 +1,48 @@
+.slider-show{
+    position: relative;
+    &:hover .arrow-direction{
+        display: block;
+    }
+     .btnArrow {
+        color: rgba(0, 0, 0, 0.3);
+    }
+    .btnArrow:hover {
+        color: rgba(0, 0, 0, 0.8);
+        background-color: rgba(0, 0, 0, 0.3);
+        border-radius: 10px;
+       
+    } 
+    .skeleton73{
+        box-shadow: 0 0 5px 5px rgb(198, 196, 196);
+        &::before{
+            content: "";
+            background: #dddddd;
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;   
+        }
+        &::after{
+            content: "";
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            background: linear-gradient( to right, #dddddd, white 50% , #dddddd);
+            animation: skeleton73 2s ease-in-out infinite alternate;
+        }
+
+        @keyframes skeleton73 {
+            from{
+                left: 0%
+            }
+            to{
+                left: 100%;
+            }
+            
+        }
+
+    }
+}

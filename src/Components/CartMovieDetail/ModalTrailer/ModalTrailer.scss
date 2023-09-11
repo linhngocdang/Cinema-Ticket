@@ -1,0 +1,43 @@
+.modal-trailer,
+.overlay-trailer {
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: fixed;
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    .overlay-trailer {
+        background: rgba(49, 49, 49, 0.8);
+    }
+    .form-modal {
+        animation-name: slidedown;
+        animation-duration: 1.5s;
+        z-index: 400;
+        position: absolute;
+        top: 20%;
+        text-align: center;
+        background-color: #ffff;
+        padding: 20px 5px 5px;
+        .close-modal {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+        }
+    }
+}
+
+@keyframes slidedown {
+    from {
+        transform: translateY(-500px);
+        opacity: 0.5;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}

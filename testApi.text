@@ -1,0 +1,28 @@
+bank : {
+  "BankId": 1,
+  "CardNumber": "1234567891234",
+  "CardName": "HA THANH TUAN",
+  "ExpireDate": "2424",
+  "CVV": "444"
+}
+
+create ticked : {
+  "BankId": 1,
+  "CardNumber": "1234567891234",
+  "CardName": "HA THANH TUAN",
+  "ExpireDate": "2424",
+  "CVV": "444",
+  "Price": 0,
+  "ShowCode": "1001-187761",
+  "Email": "hathanhtuan@example.com",
+  "CinemaName": "string",
+  "TheaterName": "string",
+  "FilmName": "string",
+  "ImageLandscape": "string",
+  "ImagePortrait": "string",
+  "Combo": "string",
+  "SeatCode": "string",
+  "ShowTime": "2023-01-13T20:30Z"
+}
+
+
